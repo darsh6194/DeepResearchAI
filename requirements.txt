@@ -1,6 +1,7 @@
 # Web Framework
 flask==2.3.3
 werkzeug==2.3.7
+gunicorn==21.2.0
 
 # AI and Language Processing
 langchain==0.1.0
