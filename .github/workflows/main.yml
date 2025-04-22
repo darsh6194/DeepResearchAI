@@ -23,6 +23,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run Flask App (optional test run)
+    - name: Install gunicorn
       run: |
-        python app.py
+        pip install gunicorn
+
+    - name: Run Flask App (production with gunicorn)
+      run: |
+        gunicorn app:app
