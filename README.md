@@ -1,4 +1,5 @@
 # Deep Research AI
+✅ **Live App:** [https://deepresearchai.onrender.com](https://deepresearchai.onrender.com)
 
 **Deep Research AI** is a powerful research assistant that helps you gather information, process it, and generate detailed answers to your research queries using AI.
 
@@ -78,6 +79,17 @@ graph TD
    ```
 
 3. Enter your research query, and the system will generate and display the answer!
+
+## 🔧 Deployment & Workflow
+
+This project is deployed live using **Render** and continuously updated using **GitHub Actions**:
+
+- Whenever code is pushed to the `main` branch, GitHub Actions triggers a workflow to:
+  1. Set up Python and dependencies
+  2. Run optional tests
+  3. Deploy the Flask application on Render
+
+- The app runs on a production-ready **gunicorn server** on Render's free tier.
 
 ## 📝 Example Output
 
